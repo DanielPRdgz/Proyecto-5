@@ -1,0 +1,334 @@
+.ladron {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  height: 250px;
+  z-index: 999;
+}
+.lingote {
+  position: absolute;
+  height: 70px;
+  filter: drop-shadow(0px 0px 2px #fcfcfc);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.contador {
+  position: absolute;
+  bottom: 165px;
+  right: 166px;
+  color: yellow;
+  text-align: center;
+  width: 100px;
+  z-index: 99999;
+}
+.recogido {
+  z-index: 1;
+}
+.content button {
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  text-decoration: none !important;
+  outline: none !important;
+  font-family: 'Carter One', sans-serif;
+  font-size: 20px;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  text-shadow: 2px 2px 1px #0066a2, -2px 2px 1px #0066a2, 2px -2px 1px #0066a2,
+    -2px -2px 1px #0066a2, 0px 2px 1px #0066a2, 0px -2px 1px #0066a2,
+    0px 4px 1px #004a87, 2px 4px 1px #004a87, -2px 4px 1px #004a87;
+  border: none;
+  margin: 15px 15px 30px;
+  background: repeating-linear-gradient(
+    45deg,
+    #3ebbf7,
+    #3ebbf7 5px,
+    #45b1f4 5px,
+    #45b1f4 10px
+  );
+  border-bottom: 3px solid rgba(16, 91, 146, 0.5);
+  border-top: 3px solid rgba(255, 255, 255, 0.3);
+  color: #fff !important;
+  border-radius: 8px;
+  padding: 8px 15px 10px;
+  box-shadow: 0 6px 0 #266b91, 0 8px 1px 1px rgba(0, 0, 0, 0.3),
+    0 10px 0 5px #12517d, 0 12px 0 5px #1a6b9a, 0 15px 0 5px #0c405e,
+    0 15px 1px 6px rgba(0, 0, 0, 0.3);
+}
+.content button:hover {
+  top: 2px;
+  box-shadow: 0 4px 0 #266b91, 0 6px 1px 1px rgba(0, 0, 0, 0.3),
+    0 8px 0 5px #12517d, 0 10px 0 5px #1a6b9a, 0 13px 0 5px #0c405e,
+    0 13px 1px 6px rgba(0, 0, 0, 0.3);
+}
+.content button::before {
+  content: '';
+  height: 10%;
+  position: absolute;
+  width: 40%;
+  background: #fff;
+  right: 13%;
+  top: -3%;
+  border-radius: 99px;
+}
+.content button::after {
+  content: '';
+  height: 10%;
+  position: absolute;
+  width: 5%;
+  background: #fff;
+  right: 5%;
+  top: -3%;
+  border-radius: 99px;
+}
+.content {
+  height: 100%;
+}
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: rotateY(70deg);
+    transform-origin: right;
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateY(0);
+    transform-origin: right;
+  }
+}
+
+.divContainerYouLose {
+  display: flex;
+  position: relative;
+  margin-top: 7em;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 99999999999999;
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+.divButtonYouLose {
+  display: flex;
+  justify-content: space-around;
+  z-index: 99999999999999;
+}
+
+.divButtonYouLose button {
+  padding: 1em;
+  font-size: 30px;
+  border-radius: 30px;
+  background-color: rgb(232, 255, 148);
+  cursor: pointer;
+  text-align: center;
+  z-index: 99999999999999;
+}
+.divButtonStart {
+  display: flex;
+  justify-content: end;
+  gap: 4em;
+  margin-right: 2em;
+  margin-top: 2em;
+}
+@keyframes myAnim {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateY(-30px) rotate(6deg);
+  }
+
+  30% {
+    transform: translateY(15px) rotate(-6deg);
+  }
+
+  45% {
+    transform: translateY(-15px) rotate(3.6deg);
+  }
+
+  60% {
+    transform: translateY(9px) rotate(-2.4deg);
+  }
+
+  75% {
+    transform: translateY(-6px) rotate(1.2deg);
+  }
+}
+.divContainerYouWin {
+  display: flex;
+  position: relative;
+  margin-top: 7em;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 99999999999999;
+}
+.divContainerYouWin img {
+  height: 650px;
+  animation: myAnim 1s ease 0s 100 normal forwards;
+}
+.divYouWin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+}
+#buttonPlay:hover {
+  background-color: rgb(62, 255, 88);
+}
+#buttonStop:hover {
+  background-color: crimson;
+}
+#cochePolicia {
+  height: 700px;
+}
+#cronometro {
+  font-size: 40px;
+  color: white;
+}
+.CountDown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 500px;
+  right: 0;
+  height: 300px;
+  z-index: 999;
+}
+.CountDown img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+@keyframes myAnim {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.warningH2 {
+  animation: myAnim 2s ease 0s 20 normal forwards;
+}
+@media (max-width: 1440px) {
+  .divContainerYouLose {
+    height: 600px;
+  }
+}
+@media (max-width: 1024px) {
+  .recogido {
+    width: 30px;
+  }
+  .CountDown {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 500px;
+    right: 0;
+    height: 300px;
+    z-index: 999;
+  }
+  #cochePolicia {
+    height: 500px;
+  }
+  .divButtonYouLose button {
+    font-size: 20px;
+  }
+  .ladron {
+    height: 200px;
+  }
+  .contador {
+    bottom: 135px;
+    right: 130px;
+  }
+}
+@media (max-width: 768px) {
+  #cochePolicia {
+    height: 400px;
+  }
+  .divButtonYouLose button {
+    font-size: 20px;
+  }
+  .CountDown img {
+    height: 200px;
+  }
+}
+@media (max-width: 425px) {
+  .recogido {
+    width: 15px;
+    height: 15px;
+  }
+  .CountDown {
+    width: 150px;
+    bottom: 30px;
+    left: 0;
+    height: 150px;
+    text-align: center;
+  }
+  #cronometro {
+    width: 100%;
+  }
+  .CountDown img {
+    width: 100%;
+  }
+
+  .ladron {
+    height: 120px;
+  }
+  .contador {
+    bottom: 83px;
+    right: 65px;
+  }
+  #cochePolicia {
+    margin-top: 10em;
+    height: 200px;
+  }
+  .divButtonYouLose button {
+    font-size: 20px;
+  }
+  .divButtonStart {
+    position: absolute;
+    left: 65px;
+  }
+}
+@media (max-width: 375px) {
+  .divButtonStart {
+    position: absolute;
+    left: 35px;
+  }
+}
+@media (max-width: 320px) {
+  .CountDown {
+    width: 150px;
+    left: 0;
+    height: 150px;
+    text-align: center;
+  }
+  .ladron {
+    height: 130px;
+    bottom: 40px;
+  }
+  .contador {
+    bottom: 110px;
+    right: 72px;
+  }
+  .divButtonStart {
+    position: absolute;
+    left: 10px;
+  }
+}
