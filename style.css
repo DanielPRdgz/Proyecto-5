@@ -9,7 +9,7 @@
   text-decoration: none;
 }
 body {
-  height: 100svh;
+  max-height: 100svh;
   width: 100%;
   overflow: hidden;
   background-color: #e4e4e1;

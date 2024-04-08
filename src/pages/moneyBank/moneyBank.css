@@ -243,6 +243,9 @@
     height: 300px;
     z-index: 999;
   }
+  .divButtonStart button {
+    font-size: 15px;
+  }
   #cochePolicia {
     height: 500px;
   }
@@ -267,8 +270,16 @@
   .CountDown img {
     height: 200px;
   }
+  .divButtonStart button {
+    font-size: 11px;
+  }
 }
-@media (max-width: 425px) {
+@media (max-width: 450px) {
+  
+  .divButtonStart button {
+    font-size: 8px;
+  }
+
   .recogido {
     width: 15px;
     height: 15px;
@@ -301,18 +312,16 @@
   .divButtonYouLose button {
     font-size: 20px;
   }
-  .divButtonStart {
-    position: absolute;
-    left: 65px;
-  }
 }
 @media (max-width: 375px) {
-  .divButtonStart {
-    position: absolute;
-    left: 35px;
+  .divButtonStart button {
+    font-size: 6px;
   }
 }
 @media (max-width: 320px) {
+  .divButtonStart button {
+    font-size: 5px;
+  }
   .CountDown {
     width: 150px;
     left: 0;
@@ -326,9 +335,5 @@
   .contador {
     bottom: 110px;
     right: 72px;
-  }
-  .divButtonStart {
-    position: absolute;
-    left: 10px;
   }
 }

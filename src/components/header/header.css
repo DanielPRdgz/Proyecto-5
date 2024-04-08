@@ -3,10 +3,12 @@ header {
   height: 10vh;
   width: 100%;
   margin-top: 1em;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 header button {
+  min-width: 100px;
+  max-height: 50px;
   position: relative;
   top: 0;
   cursor: pointer;
@@ -108,11 +110,7 @@ header button::after {
     0 13px 1px 6px rgba(0, 0, 0, 0.3);
 }
 @media (max-width: 456px) {
-  header {
-    height: 12vh;
-    flex-wrap: wrap;
-  }
   header button {
-    font-size: 15px;
+    font-size: 8px;
   }
 }
