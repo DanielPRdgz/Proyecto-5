@@ -89,7 +89,7 @@ const createMoney = () => {
 
   if (window.innerWidth <= 425) {
     let left = Math.random() * (innerWidth - 20)
-    let top = Math.random() * (innerHeight - 20 - 800) + 400
+    let top = Math.random() * (innerHeight - 20 - 300) + 150
 
     lingote.style.left = `${left - 20}px`
     lingote.style.top = `${top}px`
@@ -118,15 +118,21 @@ const recogerLingote = (e) => {
     e.target.style.left = `${window.innerWidth - randomLeft}px`
     e.target.style.top = `${window.innerHeight - randomTop}px`
   }
-  if (window.innerWidth <= 425) {
+  if (window.innerWidth <= 428) {
     let randomLeft = Math.random() * 10 + 120
-    let randomTop = Math.random() * 10 + 100
+    let randomTop = Math.random() * 10 + 95
     e.target.style.left = `${window.innerWidth - randomLeft}px`
     e.target.style.top = `${window.innerHeight - randomTop}px`
   }
-  if (window.innerWidth <= 320) {
+  if (window.innerWidth <= 425) {
     let randomLeft = Math.random() * 10 + 120
-    let randomTop = Math.random() * 10 + 125
+    let randomTop = Math.random() * 10 + 95
+    e.target.style.left = `${window.innerWidth - randomLeft}px`
+    e.target.style.top = `${window.innerHeight - randomTop}px`
+  }
+  if (window.innerWidth <= 375) {
+    let randomLeft = Math.random() * 10 + 76
+    let randomTop = Math.random() * 10 + 46
     e.target.style.left = `${window.innerWidth - randomLeft}px`
     e.target.style.top = `${window.innerHeight - randomTop}px`
   }

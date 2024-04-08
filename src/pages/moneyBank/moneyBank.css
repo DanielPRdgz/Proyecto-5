@@ -22,68 +22,31 @@
   z-index: 99999;
 }
 .recogido {
+  .recogido {
+    height: 10px;
+  }
   z-index: 1;
 }
+
 .content button {
-  position: relative;
-  top: 0;
-  cursor: pointer;
-  text-decoration: none !important;
-  outline: none !important;
-  font-family: 'Carter One', sans-serif;
-  font-size: 20px;
-  line-height: 1.5em;
-  letter-spacing: 0.1em;
-  text-shadow: 2px 2px 1px #0066a2, -2px 2px 1px #0066a2, 2px -2px 1px #0066a2,
-    -2px -2px 1px #0066a2, 0px 2px 1px #0066a2, 0px -2px 1px #0066a2,
-    0px 4px 1px #004a87, 2px 4px 1px #004a87, -2px 4px 1px #004a87;
-  border: none;
-  margin: 15px 15px 30px;
-  background: repeating-linear-gradient(
-    45deg,
-    #3ebbf7,
-    #3ebbf7 5px,
-    #45b1f4 5px,
-    #45b1f4 10px
-  );
-  border-bottom: 3px solid rgba(16, 91, 146, 0.5);
-  border-top: 3px solid rgba(255, 255, 255, 0.3);
-  color: #fff !important;
-  border-radius: 8px;
-  padding: 8px 15px 10px;
-  box-shadow: 0 6px 0 #266b91, 0 8px 1px 1px rgba(0, 0, 0, 0.3),
-    0 10px 0 5px #12517d, 0 12px 0 5px #1a6b9a, 0 15px 0 5px #0c405e,
-    0 15px 1px 6px rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+  letter-spacing: 3px;
+  width: 40px;
+  height: 20px;
+  border-width: 1px;
+  color: #fff;
+  border-color: #d02718;
+  font-weight: bold;
+  border-radius: 6px;
+  box-shadow: inset 0px 1px 0px 0px #f5978e;
+  text-shadow: inset 0px 1px 0px #810e05;
+  background: linear-gradient(#f24537, #c62d1f);
 }
+
 .content button:hover {
-  top: 2px;
-  box-shadow: 0 4px 0 #266b91, 0 6px 1px 1px rgba(0, 0, 0, 0.3),
-    0 8px 0 5px #12517d, 0 10px 0 5px #1a6b9a, 0 13px 0 5px #0c405e,
-    0 13px 1px 6px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(#c62d1f, #f24537);
 }
-.content button::before {
-  content: '';
-  height: 10%;
-  position: absolute;
-  width: 40%;
-  background: #fff;
-  right: 13%;
-  top: -3%;
-  border-radius: 99px;
-}
-.content button::after {
-  content: '';
-  height: 10%;
-  position: absolute;
-  width: 5%;
-  background: #fff;
-  right: 5%;
-  top: -3%;
-  border-radius: 99px;
-}
-.content {
-  height: 100%;
-}
+
 @keyframes myAnim {
   0% {
     opacity: 0;
@@ -177,12 +140,7 @@
   align-items: center;
   gap: 5em;
 }
-#buttonPlay:hover {
-  background-color: rgb(62, 255, 88);
-}
-#buttonStop:hover {
-  background-color: crimson;
-}
+
 #cochePolicia {
   height: 700px;
 }
@@ -275,14 +233,11 @@
   }
 }
 @media (max-width: 450px) {
-  
-  .divButtonStart button {
-    font-size: 8px;
+  .lingote {
+    height: 30px;
   }
-
   .recogido {
-    width: 15px;
-    height: 15px;
+    height: 10px;
   }
   .CountDown {
     width: 150px;
@@ -290,9 +245,6 @@
     left: 0;
     height: 150px;
     text-align: center;
-  }
-  #cronometro {
-    width: 100%;
   }
   .CountDown img {
     width: 100%;
@@ -317,23 +269,51 @@
   .divButtonStart button {
     font-size: 6px;
   }
+  .lingote {
+    height: 20px;
+  }
+  .CountDown {
+    width: 80px;
+    left: 0;
+    bottom: 30px;
+    height: 50px;
+  }
+  .ladron {
+    height: 70px;
+    bottom: 0px;
+  }
+  .contador {
+    bottom: 36px;
+    right: 26px;
+    font-size: 15px;
+  }
 }
 @media (max-width: 320px) {
+  .lingote {
+    height: 20px;
+  }
+  .recogido {
+    height: 2px;
+  }
   .divButtonStart button {
     font-size: 5px;
   }
   .CountDown {
-    width: 150px;
+    width: 80px;
     left: 0;
-    height: 150px;
-    text-align: center;
+    bottom: 30px;
+    height: 50px;
   }
   .ladron {
-    height: 130px;
-    bottom: 40px;
+    height: 70px;
+    bottom: 0px;
   }
   .contador {
-    bottom: 110px;
-    right: 72px;
+    bottom: 36px;
+    right: 26px;
+    font-size: 15px;
   }
+}
+#cronometro {
+  font-size: 15px;
 }
