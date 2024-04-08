@@ -185,7 +185,7 @@
     height: 600px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .recogido {
     width: 30px;
   }
@@ -231,69 +231,18 @@
   .divButtonStart button {
     font-size: 11px;
   }
+  .divButtonStart {
+    justify-content: start;
+    margin-left: 2em;
+  }
 }
 @media (max-width: 450px) {
-  .lingote {
-    height: 30px;
-  }
-  .recogido {
-    height: 10px;
-  }
-  .CountDown {
-    width: 150px;
-    bottom: 30px;
-    left: 0;
-    height: 150px;
-    text-align: center;
-  }
-  .CountDown img {
-    width: 100%;
-  }
-
-  .ladron {
-    height: 120px;
-  }
-  .contador {
-    bottom: 83px;
-    right: 65px;
-  }
-  #cochePolicia {
-    margin-top: 10em;
-    height: 200px;
-  }
-  .divButtonYouLose button {
-    font-size: 20px;
-  }
-}
-@media (max-width: 375px) {
-  .divButtonStart button {
-    font-size: 6px;
-  }
-  .lingote {
-    height: 20px;
-  }
-  .CountDown {
-    width: 80px;
-    left: 0;
-    bottom: 30px;
-    height: 50px;
-  }
-  .ladron {
-    height: 70px;
-    bottom: 0px;
-  }
-  .contador {
-    bottom: 36px;
-    right: 26px;
-    font-size: 15px;
-  }
-}
-@media (max-width: 320px) {
   .lingote {
     height: 20px;
   }
   .recogido {
     height: 2px;
+    width: 2px;
   }
   .divButtonStart button {
     font-size: 5px;
@@ -313,7 +262,7 @@
     right: 26px;
     font-size: 15px;
   }
-}
-#cronometro {
-  font-size: 15px;
+  #cronometro {
+    font-size: 15px;
+  }
 }
