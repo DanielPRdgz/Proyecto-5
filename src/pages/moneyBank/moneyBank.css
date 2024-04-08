@@ -31,8 +31,8 @@
 .content button {
   font-size: 15px;
   letter-spacing: 3px;
-  width: 40px;
-  height: 20px;
+  width: 60px;
+  height: 40px;
   border-width: 1px;
   color: #fff;
   border-color: #d02718;
@@ -90,7 +90,7 @@
 .divButtonStart {
   display: flex;
   justify-content: end;
-  gap: 4em;
+  gap: 2em;
   margin-right: 2em;
   margin-top: 2em;
 }
@@ -281,5 +281,9 @@
   .divYouWin button {
     width: 100px;
     height: 30px;
+  }
+  .content button {
+    height: 20px;
+    width: 30px;
   }
 }
