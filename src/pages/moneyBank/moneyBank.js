@@ -1,7 +1,7 @@
 import './moneyBank.css'
 let COUNT = 0
 let intervalCron
-let seconds = 3
+let seconds = 60
 export let intervalo
 export let pausado = true
 
@@ -128,7 +128,7 @@ const recogerLingote = (e) => {
 const printCount = () => {
   const text = document.querySelector('.contador')
   text.textContent = COUNT
-  if (COUNT === 1) {
+  if (COUNT === 70) {
     pausado = true
     clearInterval(intervalo)
     clearInterval(intervalCron)
