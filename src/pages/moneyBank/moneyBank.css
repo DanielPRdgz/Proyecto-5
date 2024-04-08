@@ -78,7 +78,8 @@
 }
 
 .divButtonYouLose button {
-  padding: 1em;
+  width: 100px;
+  height: 50px;
   font-size: 30px;
   border-radius: 30px;
   background-color: rgb(232, 255, 148);
@@ -237,6 +238,9 @@
   }
 }
 @media (max-width: 450px) {
+  .divButtonStart {
+    margin-right: 1em;
+  }
   .lingote {
     height: 20px;
   }
@@ -264,5 +268,18 @@
   }
   #cronometro {
     font-size: 15px;
+  }
+  .divContainerYouLose {
+    justify-content: start;
+  }
+  #cochePolicia {
+    height: 200px;
+  }
+  #ladronContento {
+    height: 200px;
+  }
+  .divYouWin button {
+    width: 100px;
+    height: 30px;
   }
 }

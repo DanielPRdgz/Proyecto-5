@@ -37,12 +37,6 @@ header button:hover {
   }
 }
 @media (max-width: 325px) {
-  .divButtonStart {
-    justify-content: end;
-    margin-right: 0;
-    gap: 1em;
-  }
-
   header button {
     max-width: 50px;
     max-height: 20px;
