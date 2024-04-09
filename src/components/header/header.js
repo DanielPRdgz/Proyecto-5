@@ -16,9 +16,7 @@ export const Header = (divApp) => {
   buttonTrivial.textContent = 'Trivial'
 
   buttonMoney.addEventListener('click', initMoney)
-  buttonTres.addEventListener('click', () => {
-    initTresEnRaya()
-  })
+  buttonTres.addEventListener('click', initTresEnRaya)
   buttonTrivial.addEventListener('click', initTrivial)
 
   header.appendChild(buttonMoney)

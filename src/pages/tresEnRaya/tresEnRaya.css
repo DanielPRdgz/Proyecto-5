@@ -1,0 +1,38 @@
+.generalDiv {
+  display: flex;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+}
+.tablaContainer {
+  width: 50vmin;
+  height: 50vmin;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0.2em;
+}
+.divInfoTres {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3em;
+  gap: 3em;
+}
+.divInfoTres h1 {
+  font-size: 100px;
+}
+.divInfoTres button {
+  padding: 1em;
+  border-radius: 20px;
+  font-size: 20px;
+}
+.winsInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  font-size: 30px;
+}
