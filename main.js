@@ -7,5 +7,6 @@ const divContent = document.createElement('div')
 divContent.className = 'content'
 Header(divApp)
 divApp.appendChild(divContent)
-initMoney()
+
 initTresEnRaya()
+initMoney()
