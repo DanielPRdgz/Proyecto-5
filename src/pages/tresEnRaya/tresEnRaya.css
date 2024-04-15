@@ -4,48 +4,45 @@
     transform: rotate(0deg);
     transform-origin: 0 50%;
   }
-
   10% {
     transform: rotate(2deg);
   }
-
   20%,
   40%,
   60% {
     transform: rotate(-4deg);
   }
-
   30%,
   50%,
   70% {
     transform: rotate(4deg);
   }
-
   80% {
     transform: rotate(-2deg);
   }
-
   90% {
     transform: rotate(2deg);
   }
 }
-@keyframes myAnim {
+
+@keyframes myOpacityAnim {
   0%,
   50%,
   100% {
     opacity: 1;
   }
-
   25%,
   75% {
     opacity: 0;
   }
 }
+
 .ContenidoTresEnRaya {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .tablero {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -57,19 +54,21 @@
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0.2em;
 }
+
 .tablero button {
   font-size: 200px;
   cursor: pointer;
 }
+
 .agitado {
   animation: myAnim 0.8s ease 0s 1 normal forwards;
 }
+
 .infoPlayers {
   position: absolute;
   top: 600px;
   right: 100px;
   display: flex;
-
   width: 300px;
   height: 300px;
   flex-direction: column;
@@ -77,6 +76,7 @@
   align-items: center;
   text-align: center;
 }
+
 .btnReinicio {
   position: absolute;
   top: 400px;
@@ -94,157 +94,166 @@
   background: linear-gradient(#f24537, #c62d1f);
   letter-spacing: 2px;
 }
+
 .infoPlayers h2 {
   font-size: 50px;
   letter-spacing: 3px;
 }
+
 #player1 {
   color: rgb(255, 205, 112);
 }
+
 #player2 {
   color: brown;
 }
+
 .winnerRound {
   animation: myAnim 0.8s ease 0s 1 normal forwards;
 }
+
 .celdawinner {
   background-color: yellow;
   color: black;
   font-weight: bold;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1920px) {
   .tablero {
-    width: 65vmin;
-    height: 65vmin;
+    margin-top: 2em;
   }
   .infoPlayers {
-    top: 800px;
-    left: 75px;
-    width: 200px;
-    height: 300px;
-    align-items: center;
-  }
-  .btnReinicio {
-    position: absolute;
-    top: 400px;
-    left: 200px;
-    font-size: 20px;
+    left: 20;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .tablero {
-    width: 65vmin;
-    height: 65vmin;
+    margin-top: 2em;
+  }
+  .tablero button {
+    font-size: 120px;
   }
   .infoPlayers {
-    top: 930px;
-    left: 75px;
-    width: 200px;
-    height: 250px;
-    align-items: center;
+    height: 150px;
+    top: 300px;
+    left: 20px;
   }
   .btnReinicio {
-    position: absolute;
-    top: 930px;
-    left: 700px;
-    font-size: 20px;
+    left: 1000px;
+    top: 300px;
+  }
+}
+@media (max-width: 900px) {
+  .tablero {
+    margin-top: 2em;
+  }
+  .infoPlayers {
+    height: 150px;
+    top: 860px;
+    left: 20px;
+  }
+  .btnReinicio {
+    left: 640px;
+    top: 900px;
+  }
+}
+@media (max-width: 840px) {
+  .tablero {
+    margin-top: 2em;
+  }
+  .infoPlayers {
+    height: 150px;
+    top: 840px;
+    left: 20px;
+  }
+  .btnReinicio {
+    left: 500px;
+    top: 900px;
   }
 }
 @media (max-width: 768px) {
   .tablero {
-    width: 70vmin;
-    height: 70vmin;
-  }
-  .tablero button {
-    font-size: 150px;
+    margin-top: 2em;
   }
   .infoPlayers {
-    top: 800px;
-    left: 75px;
-    width: 200px;
-    height: 300px;
-    align-items: center;
+    height: 150px;
+    top: 760px;
+    left: 20px;
   }
   .btnReinicio {
-    position: absolute;
-    top: 800px;
     left: 500px;
-    font-size: 20px;
+    top: 800px;
   }
 }
-@media (max-width: 425px) {
+
+@media (max-width: 430px) {
   .tablero {
-    margin-top: 10em;
-    width: 90vmin;
-    height: 90vmin;
+    margin-top: 2em;
   }
   .tablero button {
-    font-size: 40px;
+    font-size: 70px;
+  }
+  .btnReinicio {
+    font-size: 10px;
+    left: 30px;
+    top: 500px;
+    width: 60px;
+    height: 30px;
   }
   .infoPlayers {
-    top: 650px;
-    left: 65px;
-    width: 250px;
-    height: 100px;
-    align-items: center;
+    top: 480px;
     gap: 2em;
-  }
-  .btnReinicio {
-    position: absolute;
-    top: 120px;
-    left: 119px;
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 375px) {
-  .tablero {
-    margin-top: 10em;
-    width: 90vmin;
-    height: 90vmin;
-  }
-  .tablero button {
-    font-size: 40px;
-  }
-  .infoPlayers {
-    top: 500px;
-    left: 15px;
-    width: 250px;
-    height: 100px;
-    align-items: center;
-  }
-  .btnReinicio {
-    position: absolute;
-    top: 120px;
-    left: 60px;
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 320px) {
-  .tablero {
-    margin-top: 10em;
-    width: 90vmin;
-    height: 90vmin;
-  }
-  .tablero button {
-    font-size: 40px;
-  }
-  .infoPlayers {
-    top: 500px;
-    left: 15px;
-    width: 250px;
-    height: 100px;
-    align-items: center;
-    gap: 1em;
+    left: 130px;
+    height: 40px;
   }
   .infoPlayers h2 {
     font-size: 20px;
   }
+}
+@media (max-width: 400px) {
+  .tablero {
+    margin-top: 2em;
+  }
+  .tablero button {
+    font-size: 70px;
+  }
   .btnReinicio {
-    position: absolute;
-    top: 120px;
+    font-size: 10px;
+    left: 30px;
+    top: 500px;
+    width: 60px;
+    height: 30px;
+  }
+  .infoPlayers {
+    top: 480px;
+    gap: 1em;
+    left: 90px;
+    height: 40px;
+  }
+  .infoPlayers h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .tablero {
+    margin-top: 2em;
+  }
+  .tablero button {
+    font-size: 70px;
+  }
+  .btnReinicio {
+    top: 400px;
+    font-size: 10px;
+    left: 30px;
+    width: 60px;
+    height: 30px;
+  }
+  .infoPlayers {
+    top: 380px;
+    gap: 1em;
     left: 60px;
+    height: 40px;
+  }
+  .infoPlayers h2 {
     font-size: 20px;
   }
 }

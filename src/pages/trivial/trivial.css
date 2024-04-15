@@ -1,0 +1,117 @@
+.trivialContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  height: auto;
+}
+
+.containerPregunta {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  height: auto;
+  width: 90%;
+  padding: 2em;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  justify-content: center;
+}
+
+.containerPregunta h1 {
+  text-align: center;
+}
+
+.containerPregunta .divOptions {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.containerPregunta button {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.containerPregunta button:hover {
+  background-color: #ccc;
+}
+
+.containerPregunta .divNextPrev button {
+  margin-top: 1em;
+}
+
+.contadorTrivial {
+  margin-bottom: 1em;
+}
+
+.containerPregunta h1 {
+  padding: 0.8em 1em;
+  margin: 0;
+  border-radius: 5px;
+  background-color: #2196f3;
+  color: white;
+  margin-bottom: 1em;
+}
+@media screen and (max-width: 320px) {
+  .contadorTrivial {
+    display: none;
+  }
+  .containerPregunta {
+    min-width: 250px;
+  }
+  .trivialContent {
+    gap: 0;
+  }
+
+  .containerPregunta h1 {
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .containerPregunta .contadorTrivial {
+    margin-bottom: 0.5em;
+  }
+}
+@media screen and (max-width: 375px) {
+  .containerPregunta {
+    min-width: 280px;
+    padding: 1em;
+  }
+
+  .containerPregunta .divOptions {
+    margin-top: 1em;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 767px) {
+  .trivialContent {
+    margin-top: 3em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .trivialContent {
+    margin-top: 5em;
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .containerPregunta {
+    min-height: 30vh;
+    max-width: 50vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .containerPregunta {
+    min-height: 40vh;
+    max-width: 40vw;
+  }
+}

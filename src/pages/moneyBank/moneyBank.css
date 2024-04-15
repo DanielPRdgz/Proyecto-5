@@ -82,14 +82,14 @@
   display: flex;
   justify-content: end;
   gap: 2em;
-  margin-right: 2em;
+  margin-right: 3em;
   margin-top: 2em;
 }
 .divButtonStart button {
   font-size: 15px;
+  padding: 5px;
   letter-spacing: 3px;
-  width: 60px;
-  height: 40px;
+  padding: 5px;
   border-width: 1px;
   color: #fff;
   border-color: #d02718;
@@ -176,7 +176,7 @@
   position: absolute;
   bottom: 500px;
   right: 0;
-  height: 300px;
+  height: 220px;
   z-index: 999;
 }
 .CountDown img {
@@ -200,45 +200,47 @@
 .warningH2 {
   animation: myAnim 2s ease 0s 20 normal forwards;
 }
-@media (max-width: 1440px) {
-  .divContainerYouLose {
-    height: 600px;
+@media (max-width: 1920px) {
+  .divYouWin img {
+    height: 400px;
+  }
+
+  #cochePolicia {
+    height: 400px;
   }
 }
-@media (max-width: 1200px) {
-  .recogido {
-    width: 30px;
-  }
-  .CountDown {
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 500px;
-    right: 0;
-    height: 300px;
-    z-index: 999;
-  }
-  .divButtonStart button {
-    font-size: 15px;
-  }
+@media (max-width: 1280px) {
   #cochePolicia {
-    height: 500px;
+    height: 400px;
   }
   .divButtonYouLose button {
     font-size: 20px;
   }
+
+  .CountDown img {
+    margin-top: 10em;
+    height: 170px;
+  }
+  .divButtonStart button {
+    font-size: 11px;
+  }
+  .divButtonStart {
+    justify-content: start;
+    margin-left: 5em;
+  }
   .ladron {
-    height: 200px;
+    height: 180px;
   }
   .contador {
-    bottom: 135px;
-    right: 130px;
+    right: 110px;
+    bottom: 120px;
+  }
+  .recogido {
+    height: 15px;
+    width: 15px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   #cochePolicia {
     height: 400px;
   }
@@ -246,26 +248,37 @@
     font-size: 20px;
   }
   .CountDown img {
-    height: 200px;
+    height: 180px;
   }
   .divButtonStart button {
     font-size: 11px;
   }
   .divButtonStart {
     justify-content: start;
-    margin-left: 2em;
+    margin-left: 5em;
+  }
+  .ladron {
+    height: 180px;
+  }
+  .contador {
+    right: 110px;
+    bottom: 120px;
+  }
+  .recogido {
+    height: 15px;
+    width: 15px;
   }
 }
 @media (max-width: 450px) {
-  .divButtonStart {
-    margin-right: 1em;
-  }
   .lingote {
     height: 20px;
   }
   .recogido {
-    height: 2px;
-    width: 2px;
+    height: 6px;
+    width: 6px;
+  }
+  .divButtonStart {
+    margin-left: 3em;
   }
   .divButtonStart button {
     font-size: 5px;
@@ -273,7 +286,7 @@
   .CountDown {
     width: 80px;
     left: 0;
-    bottom: 30px;
+    bottom: 105px;
     height: 50px;
   }
   .ladron {
@@ -300,5 +313,28 @@
   .divYouWin button {
     width: 100px;
     height: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .divContainerYouWin {
+    height: 100px;
+  }
+  #ladronContento {
+    height: 160px;
+  }
+  .divButtonStart {
+    margin-left: 3em;
+  }
+  .divButtonStart {
+    margin-top: 1em;
+  }
+  .divButtonYouLose button {
+    font-size: 15px;
+    height: 20px;
+    width: 60px;
+  }
+  #cochePolicia {
+    height: 150px;
   }
 }

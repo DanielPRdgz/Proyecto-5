@@ -9,12 +9,11 @@
   text-decoration: none;
 }
 body {
-  height: 100svh;
+  min-height: 100svh;
   width: 100%;
   overflow: hidden;
-  background-color: #e4e4e1;
-  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 .content {
-  height: 100vh;
+  min-height: 100vh;
 }

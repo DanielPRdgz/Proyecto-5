@@ -112,15 +112,27 @@ const recogerLingote = (e) => {
   let randomLeft = Math.random() * 20 + 220
   e.target.style.left = `${window.innerWidth - randomLeft}px`
   e.target.style.top = `${window.innerHeight - randomTop}px`
+  if (window.innerWidth <= 1280) {
+    let randomLeft = Math.random() * 10 + 165
+    let randomTop = Math.random() * 10 + 150
+    e.target.style.left = `${window.innerWidth - randomLeft}px`
+    e.target.style.top = `${window.innerHeight - randomTop}px`
+  }
   if (window.innerWidth <= 1024) {
     let randomLeft = Math.random() * 10 + 180
     let randomTop = Math.random() * 10 + 175
     e.target.style.left = `${window.innerWidth - randomLeft}px`
     e.target.style.top = `${window.innerHeight - randomTop}px`
   }
+  if (window.innerWidth <= 820) {
+    let randomLeft = Math.random() * 10 + 150
+    let randomTop = Math.random() * 10 + 120
+    e.target.style.left = `${window.innerWidth - randomLeft}px`
+    e.target.style.top = `${window.innerHeight - randomTop}px`
+  }
   if (window.innerWidth <= 450) {
     let randomLeft = Math.random() * 10 + 75
-    let randomTop = Math.random() * 10 + 35
+    let randomTop = Math.random() * 10 + 40
     e.target.style.left = `${window.innerWidth - randomLeft}px`
     e.target.style.top = `${window.innerHeight - randomTop}px`
   }
@@ -128,7 +140,7 @@ const recogerLingote = (e) => {
 const printCount = () => {
   const text = document.querySelector('.contador')
   text.textContent = COUNT
-  if (COUNT === 70) {
+  if (COUNT === 60) {
     pausado = true
     clearInterval(intervalo)
     clearInterval(intervalCron)
