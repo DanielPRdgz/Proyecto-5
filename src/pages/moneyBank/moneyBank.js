@@ -7,7 +7,7 @@ export let pausado = true
 
 const h2cronometro = document.createElement('h2')
 export const initMoney = () => {
-  COUNT = 59
+  COUNT = 0
   const divContent = document.querySelector('.content')
   divContent.innerHTML = ''
   const audioSirena = document.createElement('audio')
