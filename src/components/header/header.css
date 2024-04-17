@@ -2,9 +2,9 @@ header {
   display: flex;
   height: 10vh;
   width: 100%;
-  margin-top: 1em;
   justify-content: space-evenly;
   align-items: center;
+  background-color: #242522;
 }
 
 header button {
@@ -20,6 +20,7 @@ header button {
   text-shadow: inset 0px 1px 0px #810e05;
   background: linear-gradient(#f24537, #c62d1f);
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 header button:hover {

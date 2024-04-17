@@ -7,7 +7,7 @@ export let pausado = true
 
 const h2cronometro = document.createElement('h2')
 export const initMoney = () => {
-  COUNT = 0
+  COUNT = 59
   const divContent = document.querySelector('.content')
   divContent.innerHTML = ''
   const audioSirena = document.createElement('audio')
@@ -112,15 +112,16 @@ const recogerLingote = (e) => {
   let randomLeft = Math.random() * 20 + 220
   e.target.style.left = `${window.innerWidth - randomLeft}px`
   e.target.style.top = `${window.innerHeight - randomTop}px`
-  if (window.innerWidth <= 1280) {
+  if (window.innerWidth <= 1920) {
     let randomLeft = Math.random() * 10 + 165
     let randomTop = Math.random() * 10 + 150
     e.target.style.left = `${window.innerWidth - randomLeft}px`
     e.target.style.top = `${window.innerHeight - randomTop}px`
   }
+
   if (window.innerWidth <= 1024) {
-    let randomLeft = Math.random() * 10 + 180
-    let randomTop = Math.random() * 10 + 175
+    let randomLeft = Math.random() * 10 + 160
+    let randomTop = Math.random() * 10 + 155
     e.target.style.left = `${window.innerWidth - randomLeft}px`
     e.target.style.top = `${window.innerHeight - randomTop}px`
   }

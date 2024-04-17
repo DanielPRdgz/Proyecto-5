@@ -44,14 +44,14 @@ export const initTresEnRaya = () => {
   h2player1.id = 'player1'
   const h2player2 = document.createElement('h2')
   h2player2.id = 'player2'
-  h2player1.textContent = `Jugador 1:${scorePlayer1}`
+  h2player1.textContent = `Jugador 1: ${scorePlayer1}`
 
-  h2player2.textContent = `Jugador 2:${scorePlayer2}`
+  h2player2.textContent = `Jugador 2: ${scorePlayer2}`
   divInfoPlayers.appendChild(h2player1)
   divInfoPlayers.appendChild(h2player2)
+  divInfoPlayers.appendChild(buttonReiniciar)
   divContentTresEnRaya.appendChild(divTablero)
   divContent.appendChild(divInfoPlayers)
-  divContent.appendChild(buttonReiniciar)
   divContent.appendChild(audioPonerFicha)
   divContent.appendChild(divContentTresEnRaya)
 

@@ -172,6 +172,12 @@ const startPreguntas = (divContent, divContentTrivial, preguntaActual) => {
           '.contadorTrivial'
         ).textContent = `Tu puntuación es: ${contador}`
         buttonOptions.style.backgroundColor = 'red'
+
+        setTimeout(() => {
+          divContainerPregunta.remove()
+          startPreguntas(divContent, divContentTrivial, preguntaActual + 1)
+        }, 200)
+
         console.log('¡Respuesta incorrecta!')
       }
     })

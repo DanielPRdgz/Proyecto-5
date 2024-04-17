@@ -47,8 +47,8 @@
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   margin-top: 5em;
-  width: 80vmin;
-  height: 80vmin;
+  width: 70vmin;
+  height: 70vmin;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -65,38 +65,31 @@
 }
 
 .infoPlayers {
-  position: absolute;
-  top: 600px;
-  right: 100px;
   display: flex;
-  width: 300px;
-  height: 300px;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
   text-align: center;
-}
 
+  height: 70px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f0f0f0;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 .btnReinicio {
-  position: absolute;
-  top: 400px;
-  right: 180px;
-  font-size: 20px;
-  width: 150px;
-  height: 50px;
-  border-width: 1px;
   color: #fff;
   border-color: #d02718;
-  font-weight: bold;
+
   border-radius: 6px;
   box-shadow: inset 0px 1px 0px 0px #f5978e;
   text-shadow: inset 0px 1px 0px #810e05;
   background: linear-gradient(#f24537, #c62d1f);
-  letter-spacing: 2px;
+  padding: 5px;
 }
 
 .infoPlayers h2 {
-  font-size: 50px;
+  font-size: 30px;
   letter-spacing: 3px;
 }
 
@@ -118,142 +111,23 @@
   font-weight: bold;
 }
 @media (max-width: 1920px) {
-  .tablero {
-    margin-top: 2em;
-  }
-  .infoPlayers {
-    left: 20;
-  }
-}
-@media (max-width: 1280px) {
-  .tablero {
-    margin-top: 2em;
-  }
   .tablero button {
-    font-size: 120px;
-  }
-  .infoPlayers {
-    height: 150px;
-    top: 300px;
-    left: 20px;
-  }
-  .btnReinicio {
-    left: 1000px;
-    top: 300px;
-  }
-}
-@media (max-width: 900px) {
-  .tablero {
-    margin-top: 2em;
-  }
-  .infoPlayers {
-    height: 150px;
-    top: 860px;
-    left: 20px;
-  }
-  .btnReinicio {
-    left: 640px;
-    top: 900px;
-  }
-}
-@media (max-width: 840px) {
-  .tablero {
-    margin-top: 2em;
-  }
-  .infoPlayers {
-    height: 150px;
-    top: 840px;
-    left: 20px;
-  }
-  .btnReinicio {
-    left: 500px;
-    top: 900px;
-  }
-}
-@media (max-width: 768px) {
-  .tablero {
-    margin-top: 2em;
-  }
-  .infoPlayers {
-    height: 150px;
-    top: 760px;
-    left: 20px;
-  }
-  .btnReinicio {
-    left: 500px;
-    top: 800px;
+    font-size: 140px;
   }
 }
 
-@media (max-width: 430px) {
-  .tablero {
-    margin-top: 2em;
-  }
+@media (max-width: 1440px) {
   .tablero button {
-    font-size: 70px;
-  }
-  .btnReinicio {
-    font-size: 10px;
-    left: 30px;
-    top: 500px;
-    width: 60px;
-    height: 30px;
-  }
-  .infoPlayers {
-    top: 480px;
-    gap: 2em;
-    left: 130px;
-    height: 40px;
-  }
-  .infoPlayers h2 {
-    font-size: 20px;
+    font-size: 130px;
   }
 }
-@media (max-width: 400px) {
-  .tablero {
-    margin-top: 2em;
-  }
+@media (max-width: 768px) {
   .tablero button {
-    font-size: 70px;
-  }
-  .btnReinicio {
-    font-size: 10px;
-    left: 30px;
-    top: 500px;
-    width: 60px;
-    height: 30px;
-  }
-  .infoPlayers {
-    top: 480px;
-    gap: 1em;
-    left: 90px;
-    height: 40px;
-  }
-  .infoPlayers h2 {
-    font-size: 20px;
+    font-size: 100px;
   }
 }
-@media (max-width: 320px) {
-  .tablero {
-    margin-top: 2em;
-  }
+@media (max-width: 425px) {
   .tablero button {
     font-size: 70px;
-  }
-  .btnReinicio {
-    top: 400px;
-    font-size: 10px;
-    left: 30px;
-    width: 60px;
-    height: 30px;
-  }
-  .infoPlayers {
-    top: 380px;
-    gap: 1em;
-    left: 60px;
-    height: 40px;
-  }
-  .infoPlayers h2 {
-    font-size: 20px;
   }
 }

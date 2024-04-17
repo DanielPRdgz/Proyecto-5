@@ -204,29 +204,21 @@
   .divYouWin img {
     height: 400px;
   }
-
-  #cochePolicia {
-    height: 400px;
-  }
-}
-@media (max-width: 1280px) {
   #cochePolicia {
     height: 400px;
   }
   .divButtonYouLose button {
     font-size: 20px;
   }
-
-  .CountDown img {
-    margin-top: 10em;
-    height: 170px;
+  .CountDown {
+    bottom: 400px;
   }
   .divButtonStart button {
     font-size: 11px;
   }
   .divButtonStart {
-    justify-content: start;
-    margin-left: 5em;
+    justify-content: flex-end;
+    margin-right: 2em;
   }
   .ladron {
     height: 180px;
@@ -240,6 +232,7 @@
     width: 15px;
   }
 }
+
 @media (max-width: 850px) {
   #cochePolicia {
     height: 400px;
@@ -254,21 +247,23 @@
     font-size: 11px;
   }
   .divButtonStart {
-    justify-content: start;
+    justify-content: flex-start;
     margin-left: 5em;
   }
   .ladron {
     height: 180px;
+    bottom: 0px;
   }
   .contador {
     right: 110px;
-    bottom: 120px;
+    bottom: 100px;
   }
   .recogido {
     height: 15px;
     width: 15px;
   }
 }
+
 @media (max-width: 450px) {
   .lingote {
     height: 20px;
@@ -286,7 +281,7 @@
   .CountDown {
     width: 80px;
     left: 0;
-    bottom: 105px;
+    bottom: 25px;
     height: 50px;
   }
   .ladron {
@@ -302,7 +297,7 @@
     font-size: 15px;
   }
   .divContainerYouLose {
-    justify-content: start;
+    justify-content: flex-start;
   }
   #cochePolicia {
     height: 200px;
@@ -325,8 +320,6 @@
   }
   .divButtonStart {
     margin-left: 3em;
-  }
-  .divButtonStart {
     margin-top: 1em;
   }
   .divButtonYouLose button {
