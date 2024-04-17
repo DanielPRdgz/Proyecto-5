@@ -131,3 +131,8 @@
     font-size: 70px;
   }
 }
+@media (max-width: 320px) {
+  .tablero button {
+    font-size: 50px;
+  }
+}
