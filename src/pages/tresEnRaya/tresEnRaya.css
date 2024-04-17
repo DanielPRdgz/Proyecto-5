@@ -80,7 +80,6 @@
 .btnReinicio {
   color: #fff;
   border-color: #d02718;
-
   border-radius: 6px;
   box-shadow: inset 0px 1px 0px 0px #f5978e;
   text-shadow: inset 0px 1px 0px #810e05;
@@ -129,6 +128,13 @@
 @media (max-width: 425px) {
   .tablero button {
     font-size: 70px;
+  }
+  .infoPlayers h2 {
+    font-size: 15px;
+    letter-spacing: 3px;
+  }
+  .btnReinicio {
+    padding: 2px;
   }
 }
 @media (max-width: 320px) {
